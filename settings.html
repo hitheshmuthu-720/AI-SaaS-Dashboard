@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Settings - AIHub</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <h2>AIHub</h2>
+
+            <a href="dashboard.html">Dashboard</a>
+            <a href="ai-tools.html">AI Tools</a>
+            <a href="history.html">History</a>
+            <a href="profile.html">Profile</a>
+            <a href="settings.html">Settings</a>
+            <a href="pricing.html">Pricing</a>
+
+            <button id="logoutBtn">
+                Logout
+            </button>
+
+        </aside>
+
+
+        <!-- Settings Content -->
+
+        <main class="dashboard-content">
+
+            <div class="dashboard-header">
+
+                <div>
+
+                    <h1>Settings</h1>
+
+                    <p>
+                        Customize your AIHub experience.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <section class="settings-container">
+
+                <!-- Appearance -->
+
+                <div class="settings-card">
+
+                    <h2>Appearance</h2>
+
+                    <p>
+                        Choose how AIHub looks.
+                    </p>
+
+                    <label class="setting-option">
+
+                        <span>Dark Mode</span>
+
+                        <input
+                            type="checkbox"
+                            id="darkMode"
+                        >
+
+                    </label>
+
+                </div>
+
+
+                <!-- Notifications -->
+
+                <div class="settings-card">
+
+                    <h2>Notifications</h2>
+
+                    <p>
+                        Manage your notifications.
+                    </p>
+
+                    <label class="setting-option">
+
+                        <span>Email Notifications</span>
+
+                        <input
+                            type="checkbox"
+                            id="emailNotifications"
+                            checked
+                        >
+
+                    </label>
+
+                    <label class="setting-option">
+
+                        <span>AI Generation Alerts</span>
+
+                        <input
+                            type="checkbox"
+                            id="generationAlerts"
+                            checked
+                        >
+
+                    </label>
+
+                </div>
+
+
+                <!-- Account -->
+
+                <div class="settings-card">
+
+                    <h2>Account Settings</h2>
+
+                    <p>
+                        Manage your account.
+                    </p>
+
+                    <button id="deleteAccount">
+                        Delete Account
+                    </button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="auth.js"></script>
+   <script>
+    const darkMode = document.getElementById("darkMode");
+
+    darkMode.addEventListener("change", function() {
+
+        if (darkMode.checked) {
+
+            document.body.style.background = "#1e1e1e";
+            document.body.style.color = "white";
+
+            document.querySelector(".dashboard-content").style.background = "#1e1e1e";
+
+            document.querySelectorAll(".settings-card").forEach(function(card) {
+                card.style.background = "#2b2b2b";
+                card.style.color = "white";
+            });
+
+        } else {
+
+            document.body.style.background = "";
+            document.body.style.color = "";
+
+            document.querySelector(".dashboard-content").style.background = "";
+
+            document.querySelectorAll(".settings-card").forEach(function(card) {
+                card.style.background = "";
+                card.style.color = "";
+            });
+        }
+
+    });
+</script> 
+
+</body>
+ 
+
+
+</html>

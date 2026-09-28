@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile - AIHub</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <h2>AIHub</h2>
+
+            <a href="dashboard.html">Dashboard</a>
+            <a href="history.html">History</a>
+            <a href="profile.html">Profile</a>
+            <a href="settings.html">Settings</a>
+            <a href="pricing.html">Pricing</a>
+
+            <button id="logoutBtn">
+                Logout
+            </button>
+
+        </aside>
+
+
+        <!-- Profile Content -->
+
+        <main class="dashboard-content">
+
+            <div class="dashboard-header">
+
+                <div>
+
+                    <h1>My Profile</h1>
+
+                    <p>
+                        Manage your personal information.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <section class="profile-card">
+
+                <div class="profile-picture">
+                    👤
+                </div>
+
+                <h2 id="profileName">
+                    User
+                </h2>
+
+                <p id="profileEmail">
+                    user@example.com
+                </p>
+
+
+                <form id="profileForm">
+
+                    <input
+                        type="text"
+                        id="profileNameInput"
+                        placeholder="Full Name"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        id="profileEmailInput"
+                        placeholder="Email Address"
+                        required
+                    >
+
+                    <button type="submit">
+                        Save Changes
+                    </button>
+
+                </form>
+
+
+                <hr>
+
+
+                <h3>Change Password</h3>
+
+                <form id="passwordForm">
+
+                    <input
+                        type="password"
+                        id="currentPassword"
+                        placeholder="Current Password"
+                        required
+                    >
+
+                    <input
+                        type="password"
+                        id="newPassword"
+                        placeholder="New Password"
+                        required
+                    >
+
+                    <input
+                        type="password"
+                        id="confirmNewPassword"
+                        placeholder="Confirm New Password"
+                        required
+                    >
+
+                    <button type="submit">
+                        Change Password
+                    </button>
+
+                </form>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="auth.js"></script>
+
+</body>
+
+</html>

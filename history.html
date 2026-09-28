@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>History - AIHub</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <h2>AIHub</h2>
+
+            <a href="dashboard.html">Dashboard</a>
+            <a href="history.html">History</a>
+            <a href="profile.html">Profile</a>
+            <a href="settings.html">Settings</a>
+            <a href="pricing.html">Pricing</a>
+
+            <button id="logoutBtn">
+                Logout
+            </button>
+
+        </aside>
+
+
+        <!-- History Content -->
+
+        <main class="dashboard-content">
+
+            <div class="dashboard-header">
+
+                <div>
+
+                    <h1>Generation History</h1>
+
+                    <p>
+                        View and manage your previous AI generations.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Search -->
+
+            <div class="history-search">
+
+                <input
+                    type="text"
+                    id="historySearch"
+                    placeholder="Search history..."
+                >
+
+            </div>
+
+
+            <!-- History List -->
+
+            <section class="history-container">
+
+                <div id="historyList"></div>
+
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="auth.js"></script>
+<script src="history.js"></script>
+</body>
+
+</html>

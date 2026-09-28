@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Tools - AIHub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <h2>AIHub</h2>
+
+            <a href="dashboard.html">Dashboard</a>
+            <a href="ai-tools.html">AI Tools</a>
+            <a href="history.html">History</a>
+            <a href="profile.html">Profile</a>
+            <a href="settings.html">Settings</a>
+            <a href="pricing.html">Pricing</a>
+
+            <button id="logoutBtn">Logout</button>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="dashboard-content">
+
+            <div class="dashboard-header">
+
+                <div>
+                    <h1>AI Tools 🤖</h1>
+
+                    <p>
+                        Create content using powerful AI tools.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- Tool Selection -->
+
+            <section class="ai-tools-section">
+
+                <h2>Select an AI Tool</h2>
+
+                <div class="ai-tool-buttons">
+
+                    <button data-tool="chat">
+                        💬 AI Chat
+                    </button>
+
+                    <button data-tool="image">
+                        🖼️ Image Generator
+                    </button>
+
+                    <button data-tool="code">
+                        💻 Code Generator
+                    </button>
+
+                    <button data-tool="summarizer">
+                        📝 Text Summarizer
+                    </button>
+
+                    <button data-tool="email">
+                        📧 Email Generator
+                    </button>
+
+                    <button data-tool="blog">
+                        ✍️ Blog Generator
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- Tool Workspace -->
+
+            <section class="ai-workspace">
+
+                <h2 id="toolTitle">
+                    AI Chat Assistant
+                </h2>
+
+                <p id="toolDescription">
+                    Ask a question and get an AI-powered response.
+                </p>
+
+
+                <textarea
+                    id="toolInput"
+                    placeholder="Enter your request here..."
+                ></textarea>
+
+
+                <button id="generateBtn">
+                    Generate
+                </button>
+
+
+                <!-- Loading -->
+
+                <div id="loading" style="display: none;">
+                    ⏳ Generating...
+                </div>
+
+
+                <!-- Output -->
+
+                <div
+                    id="toolOutputContainer"
+                    style="display: none;"
+                >
+
+                    <h3>Generated Result</h3>
+
+                    <div id="toolOutput"></div>
+
+                    <div class="output-buttons">
+
+                        <button id="copyBtn">
+                            Copy
+                        </button>
+
+                        <button id="clearBtn">
+                            Clear
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="auth.js"></script>
+    <script src="ai-tools.js"></script>
+
+</body>
+</html>
