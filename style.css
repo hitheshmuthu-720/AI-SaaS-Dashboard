@@ -441,8 +441,6 @@ footer {
     #contact {
         padding: 60px 5%;
     }
-
-}
 /* Authentication Pages */
 
 .auth-container {
@@ -505,7 +503,37 @@ footer {
 #loginForm button:hover {
     background: #5548e8;
 }
+#signupForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
 
+#signupForm input {
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+#signupForm input:focus {
+    border-color: #6c63ff;
+}
+
+#signupForm button {
+    border: none;
+    background: #6c63ff;
+    color: white;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#signupForm button:hover {
+    background: #5548e8;
+}
 .auth-box a {
     color: #6c63ff;
 }
@@ -519,18 +547,6 @@ footer {
     display: flex;
     min-height: 100vh;
     background: #f5f7fb;
-}
-.dashboard-card {
-    background: white;
-    padding: 25px;
-    border-radius: 15px;
-    border: 1px solid #e5e7f5;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: 0.3s;
-}
-
-.dashboard-card:hover {
-    transform: translateY(-5px);
 }
 .sidebar {
     width: 240px;
@@ -1084,6 +1100,41 @@ footer {
         flex-direction: column;
     }
 
+}
+/* Signup Page */
+
+#signupForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+#signupForm input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+#signupForm input:focus {
+    border-color: #6c63ff;
+}
+
+#signupForm button {
+    width: 100%;
+    border: none;
+    background: #6c63ff;
+    color: white;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#signupForm button:hover {
+    background: #5548e8;
 }
 
 
